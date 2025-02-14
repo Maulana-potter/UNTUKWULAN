@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="splash-screen" id="splash">
+        <div class="splash-content">
+            <div class="splash-heart">❤️</div>
+            <div class="splash-text">Menyalakan Cinta...</div>
+        </div>
+    </div>
+
+    <div class="floating-hearts" id="hearts"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-hearts" id="headerHearts"></div>
+            <h1 class="title animate__animated animate__fadeInDown animate__delay-3s">Happy Valentine's Day</h1>
+            <p class="subtitle animate__animated animate__fadeInUp animate__delay-3s">Wulan Safira ❤️</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="memory-box" style="animation-delay: 2.8s;">
+                <h3 class="memory-title">Kenangan Indah Kita</h3>
+                <div class="photo-grid">
+                    <div class="photo-item" onclick="openModal('img/foto2.jpg', 'FOTO PERTAMA KITA')">
+                        <img src="img/foto2.jpg" alt="Moment 1">
+                        <div class="photo-caption">FOTO PERTAMA KITA </div>
+                    </div>
+                    <div class="photo-item" onclick="openModal('img/foto1.jpg', 'KALAU INI FOTO STUDIO PERTAMA KITA')">
+                        <img src="img/foto1.jpg" alt="Moment 2">
+                        <div class="photo-caption">KALAU INI FOTO STUDIO PERTAMA KITA </div>
+                    </div>
+                    <div class="photo-item" onclick="openModal('img/foto3.jpg', 'FOTO BOXX INI WEHEHE')">
+                        <img src="img/foto3.jpg" alt="Moment 3">
+                        <div class="photo-caption">FOTO BOXX INI WEHEHE</div>
+                    </div>
+                    <div class="photo-item" onclick="openModal('img/foto4.jpg', 'INI PAS DI PANTAI')">
+                        <img src="img/foto4.jpg" alt="Moment 4">
+                        <div class="photo-caption">INI PAS DI PANTAI</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-box" style="animation-delay: 3.1s;">
+                <h3 class="memory-title">Kata Hati Yang Terdalam</h3>
+                <div class="message-box">
+                    <p class="message-text animate__animated animate__fadeIn animate__delay-4s">
+                        "Setiap moment bersamamu adalah hadiah terindah dalam hidupku.
+                        Senyummu adalah cahaya yang menerangi hari-hariku.
+                        Terima kasih telah menjadi bagian dari perjalanan hidupku.
+                        Aku mencintaimu hari ini, besok, dan selamanya."
+                    </p>
+                </div>
+            </div>
+
+            <button class="action-button" onclick="createHearts()">
+                Kirim Cinta ❤️
+            </button>
+
+            <p class="date animate__animated animate__fadeIn animate__delay-4s">14 Februari 2025</p>
+        </div>
+    </div>
+
+    <!-- <div class="music-control" onclick="toggleMusic()" id="musicControl">
+        <div class="music-icon">🎵</div>
+    </div> -->
+
+    <div class="modal" id="photoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <img class="modal-image" id="modalImage" src="" alt="Enlarged photo">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
